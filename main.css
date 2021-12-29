@@ -10,7 +10,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: Helvetica,Tahoma;
-
 }
 nav {
     background-color: #C4A494;
@@ -30,12 +29,14 @@ header, section{
 }
 .footer{
     background-color: #C4A494;
+    color: rgb(76, 76, 76);
 }
 .code {
     width: 50%;
     clear: both;
     height: fit-content;
     background: #C4A494;
+    color: rgb(76, 76, 76);
     border-radius: 2px;
     margin: 12vh 0;
     padding: 10px; 
@@ -151,7 +152,18 @@ clear: both;
     -webkit-transform: translateZ(1000px);
             transform: translateZ(1000px); 
 }
-
+h1, h2, h3, h4, h5, h6, p, li {
+    color:rgb(142, 117, 117);
+}
+.code p{
+    color: rgb(76, 76, 76); 
+}
+.footer p, h6{
+    color: rgb(76, 76, 76);
+}
+.darker p, li{
+    color: rgb(76, 76, 76);
+}
 hr {
     border-top: 1px solid #bbb;
     border-width: 50%;
@@ -206,9 +218,6 @@ hr {
 .container-features{
     background-color: #E5CEC1;
 
-}
-h1,h4,h3 {
-    color:#4d4b30
 }
 .center {
     display: block;
