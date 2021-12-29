@@ -129,6 +129,11 @@ header, section{
             -ms-transform: rotate(135deg);
                 transform: rotate(135deg); 
 }
+.section {
+    width: 100%;
+    float: left;
+    overflow: hidden; 
+}
 .section1 {
     width: 100%;
     float: left;
@@ -146,6 +151,13 @@ header, section{
     clear: both; 
 }
 .container1 {
+    width: 970px;
+    margin: 0 auto;
+    max-width: 90%;
+    -webkit-transform: translateZ(1000px);
+            transform: translateZ(1000px); 
+}
+.container{
     width: 970px;
     margin: 0 auto;
     max-width: 90%;
@@ -194,7 +206,12 @@ hr {
     width: 50%;
     padding: 0px;
 }
-.row_1::after {
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+.row::after {
     content: "";
     clear: both;
     display: -ms-flexbox;
