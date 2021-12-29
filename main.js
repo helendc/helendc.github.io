@@ -11,10 +11,12 @@ ready(() => {
             cont0.style.display = "none";
             coll0.classList.remove('expanded');
             coll0.classList.add('inactive');
+            coll0.textContent = "View Details";
         } else {
             cont0.style.display = "inline";
             coll0.classList.remove('inactive');
             coll0.classList.add('expanded');
+            coll0.textContent = "Hide Details";
         }
     };
     var coll1 = document.getElementById("coll1");
@@ -24,10 +26,12 @@ ready(() => {
             cont1.style.display = "none";
             coll1.classList.remove('expanded');
             coll1.classList.add('inactive');
+            coll1.textContent = "View Details";
         } else {
             cont1.style.display = "inline";
             coll1.classList.remove('inactive');
-            coll1.classList.add('expanded');       
+            coll1.classList.add('expanded'); 
+            coll1.textContent = "Hide Details";     
         }
     };
     var coll2 = document.getElementById("coll2");
@@ -37,10 +41,12 @@ ready(() => {
             cont2.style.display = "none";
             coll2.classList.remove('expanded');
             coll2.classList.add('inactive');
+            coll2.textContent = "View Details";
         } else {
             cont2.style.display = "inline";
             coll2.classList.remove('inactive');
             coll2.classList.add('expanded');  
+            coll2.textContent = "Hide Details";
         }
     };
 })
