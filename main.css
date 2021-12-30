@@ -223,30 +223,29 @@ hr {
 }
 .collapsible {
   background-color: #E5CEC1;
+  width: fit-content;
   color: rgb(76, 76, 76);
   cursor: pointer;
   padding: 18px;
-  width: 100%;
   /*border: 2px, solid, rgb(76, 76, 76, .3);*/
   border: none;
-  text-align: left;
+  text-align: center;
   font-size: 15px;
+  pointer-events: all;
 }
-.expanded, .collapsible:hover {
+.collapsible:hover {
     background-color: #ccc;
+}
+.collapsed:after{
+    content: '\02795'; /* Unicode character for plus sign */
+}
+.expanded:after  {
+    content: "\2796"; /* Unicode character for minus sign */
 }
 #content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-}
-.inactive:after{
-    content: '\02795'; /* Unicode character for plus sign */
-    float: right;
-}
-.expanded:after  {
-    content: "\2796"; /* Unicode character for minus sign */
-    float: right;
 }
 .vertical-center {
     margin: 0;
