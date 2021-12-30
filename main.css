@@ -231,7 +231,6 @@ hr {
   border: none;
   text-align: center;
   font-size: 15px;
-  pointer-events: all;
 }
 .collapsible:hover {
     background-color: #ccc;

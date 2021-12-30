@@ -7,17 +7,13 @@ ready(() => {
     var coll0 = document.getElementById("coll0");
     var cont0 = document.getElementById("content0");
     coll0.onclick = function(){
-        window.alert("clicked");
         if (cont0.style.display === "inline") {
             cont0.style.display = "none";
-            coll0.classList.remove('expanded');
-            coll0.classList.add('collapsed');
-            coll0.textContent = "View Details  ";
+
+            coll0.textContent = "View Details";
         } else {
             cont0.style.display = "inline";
-            coll0.classList.remove('collapsed');
-            coll0.classList.add('expanded');
-            coll0.textContent = "Hide Details  ";
+            coll0.textContent = "Hide Details";
         }
     };
     var coll1 = document.getElementById("coll1");
@@ -25,29 +21,21 @@ ready(() => {
     coll1.onclick = function(){
         if (cont1.style.display === "inline") {
             cont1.style.display = "none";
-            coll1.classList.remove('expanded');
-            coll1.classList.add('collapsed');
-            coll1.textContent = "View Details  ";
+            coll1.textContent = "View Details";
         } else {
-            cont1.style.display = "inline";
-            coll1.classList.remove('collapsed');
-            coll1.classList.add('expanded'); 
-            coll1.textContent = "Hide Details  ";     
+            cont1.style.display = "inline"; 
+            coll1.textContent = "Hide Details";     
         }
     };
     var coll2 = document.getElementById("coll2");
     var cont2 = document.getElementById("content2");
     coll2.onclick = function(){
         if (cont2.style.display === "inline") {
-            cont2.style.display = "none";
-            coll2.classList.remove('expanded');
-            coll2.classList.add('collapsed');
-            coll2.textContent = "View Details  ";
+            cont2.style.display = "none";;
+            coll2.textContent = "View Details";
         } else {
             cont2.style.display = "inline";
-            coll2.classList.remove('collapsed');
-            coll2.classList.add('expanded');  
-            coll2.textContent = "Hide Details  ";
+            coll2.textContent = "Hide Details";
         }
     };
 })
